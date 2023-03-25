@@ -1,0 +1,26 @@
+O programie:
+Algorytm do wyszukiwania tekstu w pdfach zawartych we wskazanym folderze.
+
+Instrukcja:
+1. Wypakuj zawartość archiwum do folderu np do folderu na pulpicie
+2. Uruchom 'PDF Search.exe'
+3. Otwórz ustawienia i wybierz sposób pobierania i wyszukiwania danych ('Menu' -> 'Settings' -> 'Apply')
+4. Pobierz dane z pdfów. ('Menu' -> 'Reload data' -> Wskaż adres folderu -> 'Load data')
+5. Wyszukaj nazwy elementu. np. B_100 (Uzupełnij nazwę -> 'Search')
+6. Wskaż dwuklikiem wybrany rysunek aby otworzyć go w domyślnej przeglądarce.
+
+
+
+
+
+Wyszukiwanie tekstu w pdfach w których nie da się zaznaczyć tekstu:
+Aby przeanalizować tego typu pliki można skorzystać z Tesseract OCR. Tego typu zbieranie danych z pliku jest dużo
+wolniejsze ponieważ pdf analizowany jest jako obraz.
+
+Instrukcja instalacji Tesseract ORC:
+1. Zainstaluj 'tesseract-ocr-w64-setup-....exe' (zapamiętaj lokalizację, w której instalujesz)
+2. Skopiuj do folderu z tesseract pliki z językiem (np. "...\Tesseract-OCR\tessdata\pol.traineddata")
+3. Otwórz 'PDF Search' -> 'Menu' -> 'Settings'
+4. W 'Tesseract path' wpisz lokalizację pliku ('...\Tesseract-OCR\tesseract.exe')
+5. W 'Tesseract language' wpisz język w którym ma być analizowany plik (eng, pol, ...)
+Pliki z językami znajdziesz na https://github.com/tesseract-ocr/tessdata
